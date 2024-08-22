@@ -1,10 +1,10 @@
 import { useEffect, useReducer } from 'react'
 
-import Header from './Header'
-import Main from './Main'
-import Loader from './Loader'
-import StartScreen from './StartScreen'
-import Error from './Error'
+import Header from './Header.js'
+import Main from './Main.js'
+import Loader from './Loader.js'
+import StartScreen from './StartScreen.js'
+import Error from './Error.js'
 import Question from './Question.js'
 import NextButton from './NextButton.js'
 import Progress from './Progress.js'
@@ -69,7 +69,7 @@ function reducer(state, action) {
   }
 }
 
-export default function App() { 
+export default function App() {
 
   const [{ status, questions, index, answer, points, highscore, secondsRemaining }, dispatch] = useReducer(reducer, initialState)
 
